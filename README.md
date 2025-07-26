@@ -12,3 +12,10 @@ To determine the total calcium response under Thapsigargin treatment, the AUC wa
 
 # Data Analysis of ATP stimulation 
 The analysis of ATP treatment was performed analogously to the Thapsigargin protocol described above in section 5.7.1. Baseline and threshold definitions as well as calculation of peak amplitude and AUC was performed following the same procedures. The only difference was the definition of the fixed integration windows for AUC calculations. For Peak 1, a 60 second interval was set and for Peak 2, the AUC was calculated over 140 seconds. All other parameters remained consistent with Thapsigargin analyses. 
+
+The full Python script used for the analysis is available as an open-source repository on GitHub:
+
+All parameters such as baseline and peak windows, AUC integration lengths, and the threshold buffer are defined at the beginning of the script and can be adjusted to match different experimental conditions. These user-defined parameters are clearly marked in the code for reproducibility and transparency.
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
