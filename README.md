@@ -1,7 +1,24 @@
 # calcium_analysis_bachelor_thesis
-Python script for analyzing single-cell calcium imaging data
+# Calcium Imaging Analysis (Bachelor Thesis)
+
+This repository contains a Python script used to analyze single-cell calcium imaging data in the context of my bachelor's thesis.
+
+# Content:
+- AUC calculation 
+- Peak amplitude analysis
+- basal calcium level
 
 
+# Dependencies
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `openpyxl` (for Excel export)
+
+
+
+
+# Step-by-step procedure
 Data analysis of calcium imaging data was performed using Python (version 3.12.7) with the following libraries: pandas, NumPy, matplotlib and scipy. Raw fluorescence data given as the ratio F340/F380 for every single cell were imported from Excel files and the corresponding time axis was reconstructed based on the set frame interval of 2 seconds given by the experimental acquisition settings. To determine the basal calcium level, the mean ratio F340/F380 of the first 25 time frames (corresponding to the initial 50 seconds) was calculated for each individual cell. The overall basal calcium level was then obtained by averaging these values across all measured cells. To evaluate calcium responses, peak amplitude and area under the curve (AUC) were determined. 
 Analyses were conducted separately for thapsigargin and ATP stimulation, using the same algorithm but adjusted parameters. 
 
@@ -13,7 +30,8 @@ To determine the total calcium response under Thapsigargin treatment, the AUC wa
 # Data Analysis of ATP stimulation 
 The analysis of ATP treatment was performed analogously to the Thapsigargin protocol described above in section 5.7.1. Baseline and threshold definitions as well as calculation of peak amplitude and AUC was performed following the same procedures. The only difference was the definition of the fixed integration windows for AUC calculations. For Peak 1, a 60 second interval was set and for Peak 2, the AUC was calculated over 140 seconds. All other parameters remained consistent with Thapsigargin analyses. 
 
-The full Python script used for the analysis is available as an open-source repository on GitHub:
+The full Python script used for the analysis is available as an open-source repository on GitHub: [github.com/USERNAME/REPOSITORY_NAME](https://github.com/antonia2510/calcium_analysis_bachelor_thesis)
+
 
 All parameters such as baseline and peak windows, AUC integration lengths, and the threshold buffer are defined at the beginning of the script and can be adjusted to match different experimental conditions. These user-defined parameters are clearly marked in the code for reproducibility and transparency.
 
