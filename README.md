@@ -11,9 +11,9 @@ The full Python script used for the analysis is available as an open-source repo
 
 
 ## Libraries 
-- `pandas`
-- `numpy`
-- `matplotlib`
+- `pandas (version 2.2.3)`     
+- `numpy (version 1.26.4)`      
+- `matplotlib (version 3.10.3)` 
 
 ## Step-by-step procedure
 Data analysis of calcium imaging data was performed using Python (version 3.12.7) with the following libraries: pandas, NumPy and matplotlib. Raw fluorescence data given as the ratio F340/F380 for every single cell were imported from Excel files and the corresponding time axis was reconstructed based on the set frame interval of 2 seconds given by the experimental acquisition settings. 
